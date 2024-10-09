@@ -3,202 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DNKWATCH</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <style>
-        body {
-            background: linear-gradient(135deg, #000000, #121212);
-            color: #fafafa;
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-
-        header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 15px 20px;
-            background-color: #000000;
-            position: sticky;
-            top: 0;
-            z-index: 10;
-        }
-
-        .header-left h1 {
-            margin: 0;
-            font-size: 28px;
-        }
-
-        .header-icons {
-            display: flex;
-            gap: 15px;
-        }
-
-        .header-icons a {
-            color: #fafafa;
-            text-decoration: none;
-            font-size: 20px;
-            transition: color 0.3s;
-        }
-
-        .header-icons a:hover {
-            color: blueviolet;
-        }
-
-        .search-bar {
-            flex: 1;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin: 0 20px;
-        }
-
-        .search-bar input {
-            padding: 12px;
-            width: 400px;
-            border: 1px solid #ccc;
-            border-radius: 4px 0 0 4px;
-            outline: none;
-        }
-
-        .search-btn {
-            background-color: blueviolet;
-            border: none;
-            padding: 12px 20px;
-            cursor: pointer;
-            border-radius: 0 4px 4px 0;
-            color: white;
-            font-weight: bold;
-            transition: background-color 0.3s;
-        }
-
-        .search-btn:hover {
-            background-color: darkviolet;
-        }
-
-        main {
-            padding: 30px;
-        }
-
-        .video-grid {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            gap: 20px;
-        }
-
-        .video-card {
-            background-color: #1a1a1a;
-            padding: 15px;
-            border-radius: 10px;
-            flex: 1 1 calc(33.333% - 20px);
-            box-sizing: border-box;
-            transition: transform 0.3s;
-        }
-
-        .video-card:hover {
-            transform: scale(1.05);
-        }
-
-        .video-card img {
-            width: 100%;
-            border-radius: 10px;
-        }
-
-        .video-title {
-            margin-top: 12px;
-            font-size: 18px;
-            color: #ffffff;
-        }
-
-        .video-meta {
-            color: #999;
-            font-size: 14px;
-        }
-
-        @media (max-width: 768px) {
-            .video-card {
-                flex: 1 1 calc(50% - 20px);
-            }
-
-            .search-bar input {
-                width: 300px;
-            }
-        }
-
-        @media (max-width: 480px) {
-            .video-card {
-                flex: 1 1 100%;
-            }
-
-            header {
-                flex-direction: column;
-                align-items: flex-start;
-            }
-
-            .search-bar {
-                width: 100%;
-                justify-content: flex-start;
-            }
-
-            .search-bar input {
-                width: 100%;
-            }
-        }
+    <title>Document</title>
+    <title>YouTube Home Lobby</title>
+       
     </style>
 </head>
 <body>
-    <header>
-        <div class="header-left">
-            <h1>DNKWATCH</h1>
-        </div>
-        <div class="header-icons">
-            <a href="#"><i class="fas fa-home"></i></a>
-            <a href="#"><i class="fas fa-bell"></i></a>
-            <a href="#"><i class="fas fa-user"></i></a>
-        </div>
-        <div class="search-bar">
-            <input type="text" placeholder="Hľadať...">
-            <button class="search-btn">Hľadať</button>
-        </div>
-    </header>
-
-    <main>
-        <section class="video-grid">
-            <div class="video-card">
-                <img src="https://i.ytimg.com/vi/PRQwEKDZFI0/maxresdefault.jpg" alt="Gunna-go crazy">
+    <div class="header">
+        <h1>YouTube</h1>
+    </div>
+    <div class="search-bar">
+        <input type="text" placeholder="Search">
+    </div>
+    <div class="video-grid">
+        <div class="video-card">
+            <div class="video-thumbnail"><img source=https://i.ytimg.com/vi/PRQwEKDZFI0/maxresdefault.jpg></div>
+            <div class="video-info">
                 <p class="video-title">Gunna-go crazy</p>
                 <p class="video-meta">3.6M views • 1 year ago</p>
             </div>
-            <div class="video-card">
-                <img src="https://i.ytimg.com/vi/cSXCFiEbqvM/hq720.jpg" alt="Tiakola - Manon B">
+        </div>
+        <div class="video-card">
+            <div class="video-thumbnail"><img source=https://i.ytimg.com/vi/cSXCFiEbqvM/hq720.jpg?sqp=-oaymwE7CK4FEIIDSFryq4qpAy0IARUAAAAAGAElAADIQj0AgKJD8AEB-AG2CIACuAiKAgwIABABGBQgFSh_MA8=&rs=AOn4CLAXLc9GVWpv_rE_OpTY8YaxFnxj1g></div>
+            <div class="video-info">
                 <p class="video-title">Tiakola - Manon B feat. Ryflo, Oskoow & MC Cebezinho (Clip officiel)</p>
                 <p class="video-meta">4.8M views • 1 month ago</p>
             </div>
-            <div class="video-card">
-                <img src="https://i.ytimg.com/vi/PRQwEKDZFI0/maxresdefault.jpg" alt="Gunna-go crazy">
-                <p class="video-title">Gunna-go crazy</p>
-                <p class="video-meta">3.6M views • 1 year ago</p>
-            </div>
-            <div class="video-card">
-                <img src="https://i.ytimg.com/vi/cSXCFiEbqvM/hq720.jpg" alt="Tiakola - Manon B">
-                <p class="video-title">Tiakola - Manon B feat. Ryflo, Oskoow & MC Cebezinho (Clip officiel)</p>
-                <p class="video-meta">4.8M views • 1 month ago</p>
-            </div>
-            <div class="video-card">
-                <img src="https://i.ytimg.com/vi/PRQwEKDZFI0/maxresdefault.jpg" alt="Gunna-go crazy">
-                <p class="video-title">Gunna-go crazy</p>
-                <p class="video-meta">3.6M views • 1 year ago</p>
-            </div>
-            <div class="video-card">
-                <img src="https://i.ytimg.com/vi/cSXCFiEbqvM/hq720.jpg" alt="Tiakola - Manon B">
-                <p class="video-title">Tiakola - Manon B feat. Ryflo, Oskoow & MC Cebezinho (Clip officiel)</p>
-                <p class="video-meta">4.8M views • 1 month ago</p>
-            </div>
-        </section>
-    </main>
+        </div>
+       
+    </div>
 </body>
 </html>
-
-

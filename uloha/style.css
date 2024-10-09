@@ -40,7 +40,7 @@ body {
 }
 
 .search-bar button:hover {
-    background-color: blueviolet;
+    background-color: black;
 }
 
 .video-grid {
@@ -86,4 +86,36 @@ body {
 .video-meta {
     color: #555;
     font-size: 14px;
+}
+.video-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px; 
+}
+
+.video-card {
+    width: 200px; 
+    overflow: hidden; 
+}
+
+.video-thumbnail img {
+    width: 100%; /
+    height: auto; 
+    display: block; 
+}
+.video-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px; 
+}
+
+.video-card {
+    width: 200px; 
+    overflow: hidden; 
+}
+
+.video-thumbnail img {
+    width: 100%; 
+    height: auto; 
+    display: block; 
 }
